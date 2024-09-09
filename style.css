@@ -3,3 +3,13 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: normal;
 }
+
+html {
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575), white, rgba(0, 0, 0, 0.575));
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
