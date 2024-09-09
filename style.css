@@ -33,11 +33,35 @@ body {
 
 .calculator-grid > button:hover {
     background-color: rgba(255, 255, 255, 0.9);
-
+}
+.calculator-grid .operator{
+    background-color: rgba(0, 100, 255, 0.5);
+}
+.calculator-grid > .operator:hover {
+    background-color: rgba(0, 100, 255, 0.6);
+}
+.calculator-grid .delete {
+    background-color: rgba(255, 0, 0, 0.5);
 }
 
-.span-two {
+.calculator-grid > .delete:hover {
+    background-color: rgba(255, 0, 0, 0.6);
+}
+.calculator-grid .clear {
     grid-column: span 2;
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.calculator-grid > .clear:hover {
+    background-color: rgba(255, 0, 0, 0.6);
+}
+.calculator-grid .equals{
+    grid-column: span 2;
+    background-color: rgba(1, 39, 95, 0.8);
+}
+
+.calculator-grid > .equals:hover {
+    background-color: rgb(1, 39, 95);
 }
 
 .output {
