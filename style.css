@@ -6,7 +6,7 @@
 
 html {
     height: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.575), white, rgba(0, 0, 0, 0.575));
+    background-image: linear-gradient(grey, white, grey);
 }
 
 body {
@@ -32,46 +32,46 @@ body {
 }
 
 .calculator-grid > button:hover {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgb(228, 228, 228);
 }
 
 .calculator-grid .operator {
-    background-color: rgba(0, 100, 255, 0.5);
+    background-color: rgb(65, 139, 250);
 }
 
 .calculator-grid > .operator:hover {
-    background-color: rgba(0, 100, 255, 0.6);
+    background-color: rgb(116, 169, 248);
 }
 
 .calculator-grid .delete {
-    background-color: rgba(255, 0, 0, 0.5);
+    background-color: rgb(250, 50, 50);
 }
 
 .calculator-grid > .delete:hover {
-    background-color: rgba(255, 0, 0, 0.6);
+    background-color: rgb(247, 101, 101);
 }
 
 .calculator-grid .clear {
     grid-column: span 2;
-    background-color: rgba(255, 0, 0, 0.5);
+    background-color: rgb(250, 50, 50);
 }
 
 .calculator-grid > .clear:hover {
-    background-color: rgba(255, 0, 0, 0.6);
+    background-color: rgb(247, 101, 101);
 }
 
 .calculator-grid .equals {
     grid-column: span 2;
-    background-color: rgba(1, 39, 95, 0.8);
+    background-color: rgb(1, 39, 95);
 }
 
 .calculator-grid > .equals:hover {
-    background-color: rgb(1, 39, 95);
+    background-color: rgb(54, 79, 116);
 }
 
 .output {
     grid-column: 1 / -1;
-    background-color: rgba(0, 0, 0, 0.80);
+    background-color: black;
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
@@ -82,7 +82,7 @@ body {
 }
 
 .output .previous-operand {
-    color: rgba(255, 255, 255, 0.75);
+    color: lightgray;
     font-size: 1.5rem;
 }
 
