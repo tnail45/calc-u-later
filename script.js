@@ -2,10 +2,13 @@ class Calculator {
     constructor(prevOperand, currOperand) {
         this.prevOperand = prevOperand
         this.currOperand = currOperand
+        this.clear()
     }
 
     clear() {
-
+        this.currOperand = ""
+        this.prevOperand = ""
+        this.operation = undefined
     }
 
     delete() {
@@ -20,7 +23,7 @@ class Calculator {
 
     }
 
-    compute(){
+    compute() {
 
     }
 
