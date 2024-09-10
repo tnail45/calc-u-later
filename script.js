@@ -3,12 +3,31 @@ class Calculator {
         this.prevOperand = prevOperand
         this.currOperand = currOperand
     }
+
+    clear() {
+
+    }
+
+    delete() {
+
+    }
+
+    appendNum(number) {
+
+    }
+
+    chooseOperation(operation) {
+
+    }
+
+    compute(){
+
+    }
+
+    updateDisplay() {
+
+    }
 }
-
-
-
-
-
 
 
 const numButton = document.querySelectorAll('[data-number]');
