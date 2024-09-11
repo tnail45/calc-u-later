@@ -16,7 +16,7 @@ class Calculator {
     }
 
     appendNum(number) {
-
+        this.currOperand = number
     }
 
     chooseOperation(operation) {
@@ -28,7 +28,7 @@ class Calculator {
     }
 
     updateDisplay() {
-
+        this.currOperandText.innerText = this.currOperand
     }
 }
 
