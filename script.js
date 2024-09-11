@@ -56,12 +56,31 @@ class Calculator {
         this.prevOperand = ''
     }
 
+    getDisplayNum(number) {
+        const stringNum = number.toString()
+        const intDigits = parseFloat(stringNum.split('.')[0])
+        const decimaldigits = stringNum.split('.')[1]
+        let intDisplay
+        if (isNaN(intDigits)) {
+            intDisplay = ''
+        } else {
+            intDisplay = intDigits.toLocaleString('en', {
+            maximumFractionDigits: 0 })
+        }
+        if (decimaldigits != null) {
+            return `${intdisplay}.${decimaldigits}`
+        } else {
+            return intDisplay
+        }
+    }
+
     updateDisplay() {
         this.currOperandText.innerText = this.currOperand
-        this.prevOperandText.innerText = this.prevOperand
+        if (this.operation != null) {
+            this.currOperandText.innerText = `${this.prevOperand} ${this.operation} ${this.currOperand}`
+        }
     }
 }
-
 
 const numButton = document.querySelectorAll('[data-number]');
 const operatorButton = document.querySelectorAll('[data-operation]');
