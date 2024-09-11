@@ -75,7 +75,7 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
-    flex-direction: column;
+    flex-direction: column-reverse;
     padding: 10px;
     word-wrap: break-word;
     word-break: break-all;
